@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:regular,500,600&display=swap');
+
+:root {
+	--bg-color: #121b25;
+	--accent-color: #1aa090;
+	--text-color: #d6d6d6;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+
+[class*='__container'] {
+	max-width: 1420px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
