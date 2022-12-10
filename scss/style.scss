@@ -217,10 +217,20 @@ body {
 .hero {
 	margin-top: clamp(1.875rem, 1.057rem + 4.09vw, 4.688rem);
 
+	.hero-deco {
+		position: absolute;
+		bottom: -240px;
+		right: 0;
+		z-index: -1;
+	}
+
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media (max-width: 992px) {
+			flex-direction: column;
+		}
 	}
 
 	&__content {
@@ -245,10 +255,17 @@ body {
 		background-color: #fff;
 		margin-top: 60px;
 		position: absolute;
+		@media (max-width: 992px) {
+			width: 100%;
+			position: static;
+		}
 	}
 
 	&__img {
 		flex: 0 0 calc(700px / 1420px * 100%);
+		@media (min-width: 768px) and (max-width: 992px) {
+			display: none;
+		}
 	}
 }
 
